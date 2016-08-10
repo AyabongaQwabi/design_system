@@ -1,0 +1,91 @@
+
+$columns : 8;
+
+.container{
+  width : 100%;
+  max-width: 100%;
+  text-align:center;
+  
+
+}
+@media (min-width: 1200px){
+  .container {
+      width: 1170px;
+  }
+}
+@media (min-width: 992px){
+  .container {
+      width: 970px;
+  }
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container *{
+  box-sizing:border-box;
+}
+
+.row{
+  &:before, &:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+
+}
+
+.outline{
+    border:1px solid black;
+}
+
+$class:'col' !default
+@for $i from 1 through 8{
+  .#{$class}-#{$i}{
+      float:left;
+      min-height:1px;
+      width: #{($i/$columns)*100%};
+      padding:12px;
+  }
+}
+@media all and (max-width:800px){
+    $class:'col' !default
+    @for $i from 1 through 8{
+      @if $i <= 4{
+        .#{$class}-#{$i}{
+            width:#{(($i*2)/$columns)*100%};
+        }
+      }
+      @else{
+        .#{$class}-#{$i}{
+            width: 100%;
+        }
+      }
+    }
+      .row .col-2:last-of-type{
+          width: 100%;
+      }
+
+      .row .col-5 ~ .col-1{
+          width: 100%;
+      }
+  }
+
+@media all and (max-width:650px){
+    $class:'col' !default
+    @for $i from 1 through 8{
+      @if $i <= 4{
+        .#{$class}-#{$i}{
+            width: 50%;
+        }
+      }
+      @else{
+        .#{$class}-#{$i}{
+            width: 100%;
+        }
+      }
+    }
+}
