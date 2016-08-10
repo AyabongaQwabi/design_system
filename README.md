@@ -1,4 +1,4 @@
-##*CSS FrameWork*
+## CSS FrameWork
 
 Used Sass because it's so awesome!
 Open the page.html to view demo
