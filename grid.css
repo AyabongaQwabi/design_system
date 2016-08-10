@@ -1,0 +1,117 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  text-align: center; }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.container * {
+  box-sizing: border-box; }
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.outline {
+  border: 1px solid black; }
+
+.col-1 {
+  float: left;
+  min-height: 1px;
+  width: 12.5%;
+  padding: 12px; }
+
+.col-2 {
+  float: left;
+  min-height: 1px;
+  width: 25%;
+  padding: 12px; }
+
+.col-3 {
+  float: left;
+  min-height: 1px;
+  width: 37.5%;
+  padding: 12px; }
+
+.col-4 {
+  float: left;
+  min-height: 1px;
+  width: 50%;
+  padding: 12px; }
+
+.col-5 {
+  float: left;
+  min-height: 1px;
+  width: 62.5%;
+  padding: 12px; }
+
+.col-6 {
+  float: left;
+  min-height: 1px;
+  width: 75%;
+  padding: 12px; }
+
+.col-7 {
+  float: left;
+  min-height: 1px;
+  width: 87.5%;
+  padding: 12px; }
+
+.col-8 {
+  float: left;
+  min-height: 1px;
+  width: 100%;
+  padding: 12px; }
+
+@media all and (max-width: 800px) {
+  .col-1 {
+    width: 25%; }
+  .col-2 {
+    width: 50%; }
+  .col-3 {
+    width: 75%; }
+  .col-4 {
+    width: 100%; }
+  .col-5 {
+    width: 100%; }
+  .col-6 {
+    width: 100%; }
+  .col-7 {
+    width: 100%; }
+  .col-8 {
+    width: 100%; }
+  .row .col-2:last-of-type {
+    width: 100%; }
+  .row .col-5 ~ .col-1 {
+    width: 100%; } }
+
+@media all and (max-width: 650px) {
+  .col-1 {
+    width: 50%; }
+  .col-2 {
+    width: 50%; }
+  .col-3 {
+    width: 50%; }
+  .col-4 {
+    width: 50%; }
+  .col-5 {
+    width: 100%; }
+  .col-6 {
+    width: 100%; }
+  .col-7 {
+    width: 100%; }
+  .col-8 {
+    width: 100%; } }
